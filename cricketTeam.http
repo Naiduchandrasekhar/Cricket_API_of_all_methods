@@ -1,0 +1,35 @@
+//GET All Players Table
+GET http://localhost:3000/players/
+
+
+//GET Player Table
+######
+GET http://localhost:3000/players/2/
+
+
+//Post New Player Table
+######
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+    "playerName": "Kalyani",
+    "jerseyNumber": 66,
+    "role": "All-Rounder"
+}
+
+//Update Player Table
+##########
+PUT http://localhost:3000/players/11/
+Content-Type: application/json
+
+{
+    "playerName": "Sai Kiran",
+    "jerseyNumber": 88,
+    "role": "Wicket-Keeper"
+}
+
+
+//Delete Player Table
+#########
+DELETE http://localhost:3000/players/14/
